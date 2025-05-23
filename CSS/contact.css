@@ -1,0 +1,51 @@
+#contact {
+text-align: center;
+}
+
+
+form {
+  display: inline-block;
+  width: 95%;
+  max-width: 500px;
+}
+#contact input, #contact textarea {
+  transition: 0.5s ease;
+  padding: 15px;
+  font-family: Monospace;
+  border-radius: 10px;
+  outline: 0;
+}
+
+#contact button {
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+
+#contact input:hover, #contact textarea:hover {
+  outline: 5px solid #03513edf;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a {
+  margin: 0 8px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: none;
+}
+
+.social-icons a:hover {
+  color: #64b5f6; /* Light blue on hover */
+  transform: scale(1.2);
+}

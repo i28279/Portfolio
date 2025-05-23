@@ -1,0 +1,30 @@
+.portfolio-box {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff;
+  transition: all 0.3s ease;
+}
+.portfolio-box:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 4px 12px #babecc, -4px -4px 12px #ffffff;
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-img-wrapper:hover .portfolio-caption {
+  opacity: 1;
+}
