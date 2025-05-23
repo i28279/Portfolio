@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imran Ali | Digital Marketer</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="CSS/body.css">
+  <link rel="stylesheet" href="CSS/skill.css">
+  <link rel="stylesheet" href="CSS/services.css">
+  <link rel="stylesheet" href="CSS/portfolio.css">
+  <link rel="stylesheet" href="CSS/contact.css">
+  <link rel="stylesheet" href="CSS/CV.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="w3-bar navbar">
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Get in Touch</a>
+    </div>
+    
+    <!-- Hero -->
+    <section id="home" class="neumorphic-section">
+      <div class="w3-row neumorphic-container w3-center w3-animate-opacity">
+        <div class="w3-half w3-padding-large">
+          <h1 class="w3-xlarge w3-margin-bottom">I'm <span style="color: #741eb7df">Md. Imran Ali</span></h1>
+          <div class="w3-center w3-margin-top">
+            <h2 class="w3-xlarge">
+              <span id="typing-text"></span><span class="cursor">&nbsp;</span>
+            </h2>
+          </div>
+          <p class="w3-medium w3-margin-bottom">
+            Helping businesses grow through strategic online marketing solutions
+          </p>
+          <a href="#contact" class="neumorphic-btn w3-margin-right">Hire Me</a>
+          <a href="#portfolio" class="neumorphic-btn">View Work</a>
+        </div>
+        <div class="w3-half w3-padding-large">
+          <img src="profile.png" alt="Md. Imran Ali" class="profile-img">
+        </div>
+      </div>
+      <script>
+        const texts = [
+          "Freelance Digital Marketer",
+          "Facebook Ads Specialist",
+          "Google Ads Expert",
+          "SEO Strategist",
+          "Google Analytics Certified",
+          "Instagram Marketing",
+          "YouTube SEO Expert",
+          "Marketing Funnel Builder"
+        ];
+      
+        let index = 0;
+        let charIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+        const typingElement = document.getElementById("typing-text");
+      
+        function type() {
+          if (index >= texts.length) index = 0;
+          currentText = texts[index];
+      
+          if (isDeleting) {
+            typingElement.textContent = currentText.substring(0, charIndex--);
+            if (charIndex < 0) {
+              isDeleting = false;
+              index++;
+            }
+          } else {
+            typingElement.textContent = currentText.substring(0, charIndex++);
+            if (charIndex > currentText.length) {
+              isDeleting = true;
+              setTimeout(type, 1000);
+              return;
+            }
+          }
+      
+          setTimeout(type, isDeleting ? 50 : 100);
+        }
+      
+        document.addEventListener("DOMContentLoaded", type);
+      </script>
+    </section>
+    
+     <!-- Services Section with w3.css and Neumorphism -->
+    <section id="services" class="w3-container w3-padding-64 w3-light-grey">
+      <div class="w3-center w3-margin-bottom">
+        <h2 class="w3-xxlarge w3-text-dark-grey">My Services</h2>
+        <p class="w3-large w3-text-grey">What I can do for your business</p>
+      </div>
+    
+      <div class="w3-row-padding w3-center">
+        
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card w3-padding-32 neumorphic">
+            <div class="icon-circle w3-center">
+              <i class="fas fa-ad fa-2x w3-text-blue"></i>
+            </div>
+            <h4>Facebook Ads</h4>
+            <p>Targeted ad campaigns to reach your ideal customers on Facebook and Instagram.</p>
+          </div>
+        </div>
+    
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card w3-padding-32 neumorphic">
+            <div class="icon-circle w3-center">
+              <i class="fas fa-search-dollar fa-2x w3-text-green"></i>
+            </div>
+            <h4>Google Ads</h4>
+            <p>PPC campaigns that drive qualified traffic to your website and generate leads.</p>
+          </div>
+        </div>
+    
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card w3-padding-32 neumorphic">
+            <div class="icon-circle w3-center">
+              <i class="fas fa-chart-line fa-2x w3-text-teal"></i>
+            </div>
+            <h4>Google Analytics</h4>
+            <p>Data-driven insights to understand your audience and optimize marketing performance.</p>
+          </div>
+        </div>
+    
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card w3-padding-32 neumorphic">
+            <div class="icon-circle w3-center">
+              <i class="fab fa-youtube fa-2x w3-text-red"></i>
+            </div>
+            <h4>YouTube Video SEO</h4>
+            <p>Optimize your videos to rank higher in YouTube search and get more views.</p>
+          </div>
+        </div>
+    
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card w3-padding-32 neumorphic">
+            <div class="icon-circle w3-center">
+              <i class="fas fa-key fa-2x w3-text-orange"></i>
+            </div>
+            <h4>Keyword Research</h4>
+            <p>Find the right keywords to target for your SEO and content marketing strategy.</p>
+          </div>
+        </div>
+    
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-card w3-padding-32 neumorphic">
+            <div class="icon-circle w3-center">
+              <i class="fas fa-hashtag fa-2x w3-text-purple"></i>
+            </div>
+            <h4>Social Media Marketing</h4>
+            <p>Engage your audience and build brand awareness across social platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills" class="w3-padding-64 w3-light-grey">
+      <div class="w3-content" style="max-width:1100px">
+        <div class="w3-center w3-margin-bottom">
+          <h2 class="w3-xxxlarge section-title">My Skills</h2>
+          <p class="w3-large w3-text-grey">Areas of expertise and proficiency</p>
+        </div>
+    
+        <div class="w3-row-padding">
+          <div class="w3-half">
+            <div class="neumorph-box">
+              <h5>Facebook Ads Management</h5>
+              <div class="skill-bar">
+                <div class="skill-progress" style="--skill-width: 95%;" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="neumorph-box">
+              <h5>Google Ads (PPC)</h5>
+              <div class="skill-bar">
+                <div class="skill-progress" style="--skill-width: 90%;" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="neumorph-box">
+              <h5>Google Analytics</h5>
+              <div class="skill-bar">
+                <div class="skill-progress" style="--skill-width: 85%;" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="w3-half">
+            <div class="neumorph-box">
+              <h5>YouTube SEO</h5>
+              <div class="skill-bar">
+                <div class="skill-progress" style="--skill-width: 88%;" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="neumorph-box">
+              <h5>Keyword Research</h5>
+              <div class="skill-bar">
+                <div class="skill-progress" style="--skill-width: 92%;" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="neumorph-box">
+              <h5>Social Media Marketing</h5>
+              <div class="skill-bar">
+                <div class="skill-progress" style="--skill-width: 87%;" data-width="87%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+          let skillsAnimated = false;
+        
+          function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+              rect.top <= (window.innerHeight - 100) &&
+              rect.bottom >= 0
+            );
+          }
+        
+          function animateSkills() {
+            if (skillsAnimated) return;
+        
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+              const targetWidth = parseInt(bar.getAttribute('data-width'));
+              let currentWidth = 0;
+              const interval = setInterval(() => {
+                if (currentWidth >= targetWidth) {
+                  clearInterval(interval);
+                } else {
+                  currentWidth++;
+                  bar.style.width = currentWidth + '%';
+                }
+              }, 10);
+            });
+        
+            skillsAnimated = true;
+          }
+        
+          window.addEventListener('scroll', () => {
+            const skillsSection = document.querySelector('#skills');
+            if (isInViewport(skillsSection)) {
+              animateSkills();
+            }
+          });
+        </script>
+    </section>
+      
+    <!-- Portfolio -->
+    <section id="portfolio" class="w3-container w3-padding-64 w3-light-grey">
+      <div class="w3-center w3-margin-bottom">
+        <h2 class="w3-xxlarge w3-text-dark-grey">My Portfolio</h2>
+        <p class="w3-large w3-text-grey">Proof of my successful campaigns</p>
+      </div>
+    
+      <div class="w3-row-padding">
+        
+        <!-- Portfolio Item -->
+        <div class="w3-third w3-margin-bottom">
+          <div class="portfolio-box w3-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="noimg.jpg" alt="Facebook Ads Campaign" class="w3-image">
+              <div class="portfolio-caption">
+                <h5>Facebook Ads for E-commerce</h5>
+                <p>Increased conversions by 320% for a fashion brand</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Repeat for other items -->
+        <div class="w3-third w3-margin-bottom">
+          <div class="portfolio-box w3-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="noimg.jpg" alt="Google Ads Campaign" class="w3-image">
+              <div class="portfolio-caption">
+                <h5>Google Ads for Local Business</h5>
+                <p>Reduced cost per lead by 45% for a dental clinic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="w3-third w3-margin-bottom">
+          <div class="portfolio-box w3-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="noimg.jpg" alt="YouTube SEO Results" class="w3-image">
+              <div class="portfolio-caption">
+                <h5>YouTube SEO for Tech Channel</h5>
+                <p>Grew views by 580% in 3 months</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="w3-third w3-margin-bottom">
+          <div class="portfolio-box w3-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="noimg.jpg" alt="Instagram Strategy" class="w3-image">
+              <div class="portfolio-caption">
+                <h5>Instagram Growth Strategy</h5>
+                <p>Grew followers from 0 to 25k in 6 months</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="w3-third w3-margin-bottom">
+          <div class="portfolio-box w3-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="noimg.jpg" alt="Keyword Research" class="w3-image">
+              <div class="portfolio-caption">
+                <h5>Keyword Research for Blog</h5>
+                <p>Increased organic traffic by 210%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="w3-third w3-margin-bottom">
+          <div class="portfolio-box w3-card-4">
+            <div class="portfolio-img-wrapper">
+              <img src="noimg.jpg" alt="Analytics Dashboard" class="w3-image">
+              <div class="portfolio-caption">
+                <h5>Google Analytics Setup</h5>
+                <p>Implemented tracking for better decision making</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- CV -->
+    <div class="section">
+      <h2>Want to View My Resume?</h2>
+      <button class="neumorphic-button" onclick="showResume()">View Resume</button>
+  
+      <iframe id="resume-frame" src="cv.html"></iframe>
+  
+      <div class="download-container" id="download-container">
+        <a class="download-link" href="#" onclick="printIframe()">Download Resume</a>
+      </div>
+      
+      <script>
+          const resume = document.getElementById('resume-frame');
+          const downloadCV = document.getElementById('download-container');
+          const viewBTN = document.querySelector(".neumorphic-button");
+          
+          viewBTN.onclick = () => {
+            if (viewBTN.innerHTML == "View Resume") {
+              resume.style.height = "500px";
+              downloadCV.style.display = 'block';
+              viewBTN.innerHTML = "Hide Resume";
+            } else {
+              resume.style.height = '0px';
+              downloadCV.style.display = 'none';
+              viewBTN.innerHTML = "View Resume";
+            }
+          }
+          
+          function printIframe() {
+            const iframe = document.getElementById('resume-frame');
+            iframe.contentWindow.focus();
+            iframe.contentWindow.print();
+          }
+      </script>
+    </div>
+    
+    <!-- Get in Touch -->
+    <section id="contact" class="neomorphism w3-animate-left">
+      <h2 style="text-align: left; font-family: times new roman">Get in Touch</h2>
+      <form onsubmit="return sendMail()">
+        <p><input class="w3-input w3-border" type="text" id="subject" placeholder="Subject" required></p>
+        <p><textarea class="w3-input w3-border" id="message" placeholder="Your Message" required></textarea></p>
+        <p style="text-align: left"><button class="w3-button w3-blue" type="submit">Send Message</button></p>
+      </form>
+      
+      <script>
+        function sendMail() {
+          const subject = encodeURIComponent(document.getElementById("subject").value);
+          const body = encodeURIComponent(document.getElementById("message").value);
+      
+          window.location.href = `mailto:imran.28279@gmail.com?subject=${subject}&body=${body}`;
+          return false; // Prevent default form submission
+        }
+      </script>
+    </section>  
+    
+    <section style="padding-top: 15px !important;">
+      <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-padding glass-card">
+            <i class="fas fa-envelope fa-2x w3-margin-bottom w3-text-blue"></i>
+            <h5>Email</h5>
+            <p>imran.28279@gmail.com</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-padding glass-card">
+            <i class="fas fa-phone fa-2x w3-margin-bottom w3-text-blue"></i>
+            <h5>Phone</h5>
+            <p>+880 17042-09861</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-padding glass-card">
+            <i class="fas fa-map-marker-alt fa-2x w3-margin-bottom w3-text-blue"></i>
+            <h5>Location</h5>
+            <p>Rangpur, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="w3-dark-gray w3-padding-32">
+      <div class="w3-row w3-center w3-container">
+        <div class="w3-half w3-padding-small w3-center">
+          <p class="w3-small">&copy; 2023 Md. imran Ali. All rights reserved.</p>
+        </div>
+        <div class="w3-half w3-padding-small w3-center">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Dekha.Hobe.Abar.Konodin" class="w3-text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="w3-text-white"><i class="fab fa-x fa-lg"></i></a>
+            <a href="#" class="w3-text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="#" class="w3-text-white"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="w3-text-white"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
