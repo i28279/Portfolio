@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO -->
+  <title>Imran Ali | Facebook Ads & Automation Expert</title>
+  <meta name="description" content="Hi, I'm Imran — a Facebook Ads, Instagram automation & WhatsApp chatbot expert. Let's grow your business digitally!" />
+  <meta name="keywords" content="Facebook Ads, WhatsApp Automation, Instagram Ads, Digital Marketing, Imran Ali, Portfolio" />
+  <meta name="author" content="Imran Ali" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph for Social Media Preview -->
+  <meta property="og:title" content="Imran Ali | Digital Ads & Automation Expert" />
+  <meta property="og:description" content="I help businesses grow with Facebook Ads, Instagram automation, and chatbot systems." />
+  <meta property="og:image" content="https://i28279.github.io/Portfolio/images/preview.jpg" />
+  <meta property="og:url" content="https://i28279.github.io/Portfolio/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Imran Ali | Digital Ads Expert" />
+  <meta name="twitter:description" content="Helping brands with automation, ads & strategy." />
+  <meta name="twitter:image" content="https://i28279.github.io/Portfolio/images/preview.jpg" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://i28279.github.io/Portfolio/" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="CSS/Portfolio.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="w3-bar navbar">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#workproof">Work Proof</a>
+      <a href="#downloadcv">View Resume</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Get in Touch</a>
+      <a href="#about">About</a>
+    </div>
+    
+    <!-- Hero -->
+    <section id="home" class="neumorphic-section">
+      <div class="w3-row neumorphic-container w3-center w3-animate-opacity">
+        <div class="w3-half w3-padding-large">
+          <h1 class="w3-xlarge w3-margin-bottom">Hi, I'm <span style="color: #15d9db; font-weight: bold; font-size: 30px; font-family: sans-serif">Md. Imran Ali</span></h1>
+          <div class="w3-center w3-margin-top">
+            <h2 class="w3-xlarge">
+              <span id="typing-text"></span><span class="cursor">&nbsp;</span>
+            </h2>
+          </div>
+          <p class="w3-medium w3-margin-bottom">
+            I help businesses grow through result-driven digital marketing strategies.
+          </p>
+          <a href="#contact" class="neumorphic-btn w3-margin-right">Let's Work Together</a>
+          <a href="#workproof" class="neumorphic-btn">View My Work</a>
+        </div>
+        <div class="w3-half w3-padding-large">
+          <img src="profile.png" alt="Md. Imran Ali" class="profile-img">
+        </div>
+      </div>
+      <script>
+        const texts = [
+          "Freelance Digital Marketer",
+          "Meta Ads Specialist",
+          "Google Ads Expert",
+          "SEO Strategist",
+          "Google Analytics Certified",
+          "YouTube SEO Expert",
+          "Marketing Funnel Builder"
+        ];
+      
+        let index = 0;
+        let charIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+        const typingElement = document.getElementById("typing-text");
+      
+        function type() {
+          if (index >= texts.length) index = 0;
+          currentText = texts[index];
+      
+          if (isDeleting) {
+            typingElement.textContent = currentText.substring(0, charIndex--);
+            if (charIndex < 0) {
+              isDeleting = false;
+              index++;
+            }
+          } else {
+            typingElement.textContent = currentText.substring(0, charIndex++);
+            if (charIndex > currentText.length) {
+              isDeleting = true;
+              setTimeout(type, 1000);
+              return;
+            }
+          }
+      
+          setTimeout(type, isDeleting ? 50 : 100);
+        }
+      
+        document.addEventListener("DOMContentLoaded", type);
+      </script>
+    </section>
+    
+    <!-- My Skills -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <p class="subtitle">Tools and strategies I’ve mastered to grow businesses</p>
+
+      <div class="skills-grid">  
+        <!-- Facebook Ads -->  
+        <div class="skill-card" data-percent="95">  
+          <div class="circle-progress">  
+            <svg width="120" height="120">  
+              <circle cx="60" cy="60" r="50" class="circle-bg" />  
+              <circle cx="60" cy="60" r="50" class="circle-bar" />  
+            </svg>  
+            <div class="percentage">0%</div>  
+          </div>  
+          <div class="skill-name">Facebook Ads</div>  
+          <div class="caption">Advanced targeting, custom audiences, and ROI-focused ad strategies</div>  
+        </div>  
+
+        <!-- YouTube SEO -->  
+        <div class="skill-card" data-percent="90">  
+          <div class="circle-progress">  
+            <svg width="120" height="120">  
+              <circle cx="60" cy="60" r="50" class="circle-bg" />  
+              <circle cx="60" cy="60" r="50" class="circle-bar" />  
+            </svg>  
+            <div class="percentage">0%</div>  
+          </div>  
+          <div class="skill-name">YouTube SEO</div>  
+          <div class="caption">Video optimization, keyword research, CTR improvement & ranking strategies</div>  
+        </div>  
+
+        <!-- Google Ads -->  
+        <div class="skill-card" data-percent="85">  
+          <div class="circle-progress">  
+            <svg width="120" height="120">  
+              <circle cx="60" cy="60" r="50" class="circle-bg" />  
+              <circle cx="60" cy="60" r="50" class="circle-bar" />  
+            </svg>  
+            <div class="percentage">0%</div>  
+          </div>  
+          <div class="skill-name">Google Ads</div>  
+          <div class="caption">Search, display & remarketing campaigns with conversion optimization</div>  
+        </div>  
+
+        <!-- Keyword Research -->  
+        <div class="skill-card" data-percent="88">  
+          <div class="circle-progress">  
+            <svg width="120" height="120">  
+              <circle cx="60" cy="60" r="50" class="circle-bg" />  
+              <circle cx="60" cy="60" r="50" class="circle-bar" />  
+            </svg>  
+            <div class="percentage">0%</div>  
+          </div>  
+          <div class="skill-name">Keyword Research</div>  
+          <div class="caption">High-traffic, low-competition keyword analysis for organic & paid growth</div>  
+        </div>  
+
+        <!-- Google Analytics -->  
+        <div class="skill-card" data-percent="87">  
+          <div class="circle-progress">  
+            <svg width="120" height="120">  
+              <circle cx="60" cy="60" r="50" class="circle-bg" />  
+              <circle cx="60" cy="60" r="50" class="circle-bar" />  
+            </svg>  
+            <div class="percentage">0%</div>  
+          </div>  
+          <div class="skill-name">Google Analytics</div>  
+          <div class="caption">Data tracking, user behavior analysis & performance-driven reporting</div>  
+        </div>  
+      </div>
+
+      <script>
+        document.querySelectorAll('.skill-card').forEach(card => {
+          const percent = parseInt(card.getAttribute('data-percent'));
+          const circle = card.querySelector('.circle-bar');
+          const text = card.querySelector('.percentage');
+          const radius = 50;
+          const circumference = 2 * Math.PI * radius;
+      
+          circle.style.strokeDasharray = circumference;
+      
+          let progress = 0;
+          let increasing = true;
+      
+          function animateBar() {
+            if (increasing) {
+              if (progress <= percent) {
+                const offset = circumference - (progress / 100) * circumference;
+                circle.style.strokeDashoffset = offset;
+                text.textContent = `${progress}%`;
+                progress++;
+                setTimeout(animateBar, 500 / percent); // Increase over 0.5s
+              } else {
+                setTimeout(() => {
+                  increasing = false;
+                  animateBar();
+                }, 2000); // Wait 2s before reset
+              }
+            } else {
+              if (progress >> 0) {
+                const offset = circumference - (progress / 100) * circumference;
+                circle.style.strokeDashoffset = offset;
+                text.textContent = `${progress - 1}%`;
+                progress--;
+                setTimeout(animateBar, 100 / percent); // Decrease over 0.1s
+              } else {
+                setTimeout(() => {
+                  increasing = true;
+                  animateBar();
+                }, 1500); // Wait 1s at 0%
+              }
+            }
+          }
+      
+          animateBar();
+        });
+      </script>
+    </section>
+    
+   
+    <!-- Services Section - Glassmorphism Style -->
+    <section id="services" style="background: #0e0e0e; padding: 64px 0; color: #fff;">
+      <div class="w3-center w3-margin-bottom">
+        <h2 class="w3-xxlarge" style="color: #fff;">My Services</h2>
+        <p class="w3-large subtitle" style="color: #ccc;">What I can do for your business</p>
+      </div>
+    
+      <div class="w3-row-padding w3-center">
+        
+        <!-- Service Box -->
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fas fa-ad" style="color:#2196F3;"></i>
+            </div>
+            <h4>Facebook Ads</h4>
+            <p>Highly targeted ad campaigns to boost conversions on Facebook & Instagram.</p>
+          </div>
+        </div>
+    
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fas fa-search-dollar" style="color:#4CAF50;"></i>
+            </div>
+            <h4>Google Ads</h4>
+            <p>Smart PPC strategies to attract the right audience and increase ROI.</p>
+          </div>
+        </div>
+    
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fas fa-chart-line" style="color:#00bfa5;"></i>
+            </div>
+            <h4>Google Analytics</h4>
+            <p>Track, analyze, and grow using powerful audience insights.</p>
+          </div>
+        </div>
+    
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fab fa-youtube" style="color:#ff1744;"></i>
+            </div>
+            <h4>YouTube Video SEO</h4>
+            <p>Boost video rankings, visibility, and engagement on YouTube.</p>
+          </div>
+        </div>
+    
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fas fa-key" style="color:#ff9800;"></i>
+            </div>
+            <h4>Keyword Research</h4>
+            <p>Uncover profitable keywords to improve search ranking and reach.</p>
+          </div>
+        </div>
+    
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h4>Chatbot & Automation</h4>
+            <p>Build smart Messenger and WhatsApp bots to automate customer support & sales.</p>
+          </div>
+        </div>
+
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="glass-card animate-card">
+            <div class="icon-circle">
+              <i class="fas fa-briefcase" style="color:#d9ff00;"></i>
+            </div>
+            <h4>Business Account Setup</h4>
+            <p>Professional setup of business accounts on Facebook, WhatsApp, Instagram & YouTube to boost your brand's presence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      
+    <!-- Work Proof -->
+    <section id="workproof" style="padding: 60px 0; background: #0e0e0e; color: #fff;">
+      <div class="glass-container" style="max-width: 1000px; margin: auto; padding: 30px; border-radius: 20px;">
+        <h2 style="text-align: center;">Work Proof</h2>
+        <p class="subtitle" style="text-align: center; color: #ccc;">Proof of my success and client satisfaction</p>
+
+        <div class="nav-buttons" style="margin: 20px 0; text-align: center;">
+          <button onclick="window.history.back()" style="padding: 10px 20px; background-color: #2196F3; border: none; border-radius: 8px; color: white; cursor: pointer;">
+            <i class="fas fa-arrow-left"></i> Back
+          </button>
+        </div>
+
+        <iframe id="myFrame" src="Projects.html" style="width: 100%; height: 600px; border: none; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.3);"></iframe>
+      </div>
+    </section>
+
+    
+    
+    <!-- CV -->
+    <section id="downloadcv" class="cv-section">
+      <center>
+        <div class="cv-parrent">
+          <h2>Want to View My Resume?</h2>
+          <button class="neumorphic-button" id="view-btn">View Resume</button>
+          <iframe id="resume-frame" src="cv.html"></iframe>
+          <div class="download-container" id="download-container">
+            <a href="#" class="download-link" onclick="printIframe()">Download Resume</a>
+          </div>
+        </div>
+      </center>
+      
+        <script>
+          const resume = document.getElementById('resume-frame');
+          const downloadCV = document.getElementById('download-container');
+          const viewBTN = document.getElementById('view-btn');
+      
+          viewBTN.onclick = () => {
+            const isHidden = resume.style.height === '0px' || resume.style.height === '';
+            if (isHidden) {
+              resume.style.height = "900px";
+              downloadCV.style.display = 'block';
+              viewBTN.innerHTML = "Hide Resume";
+            } else {
+              resume.style.height = '0px';
+              downloadCV.style.display = 'none';
+              viewBTN.innerHTML = "View Resume";
+            }
+          };
+      
+          function printIframe() {
+            const iframe = document.getElementById('resume-frame');
+            iframe.contentWindow.focus();
+            iframe.contentWindow.print();
+          }
+        </script>
+    </section>
+    
+    <!-- Get in Touch Section -->
+    <section id="contact" class="contact-section hidden-on-load">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    
+        <div style="display: flex; gap: 10px; justify-content: space-between; flex-wrap: wrap;">
+          <button type="button" onclick="sendMail()">Send via Email</button>
+          <button type="button" onclick="sendWhatsApp()">Send via WhatsApp</button>
+        </div>
+      </form>
+    
+      <!-- JS: Mail + WhatsApp + Scroll Trigger -->
+      <script>
+        function sendMail() {
+          const subject = encodeURIComponent(document.getElementById("subject").value);
+          const body = encodeURIComponent(document.getElementById("message").value);
+          window.location.href = `mailto:imran.28279@gmail.com?subject=${subject}&body=${body}`;
+        }
+    
+        function sendWhatsApp() {
+          const subject = document.getElementById("subject").value.trim();
+          const message = document.getElementById("message").value.trim();
+          if (!subject || !message) {
+            alert("Please fill in both Subject and Message!");
+            return;
+          }
+    
+          const fullMsg = `Subject: ${subject}%0A%0A${message}`;
+          const phone = "8801704209861"; // 👉 এখানে তোর WhatsApp নম্বর বসা লাগবে
+          const url = `https://wa.me/${phone}?text=${encodeURIComponent(fullMsg)}`;
+          window.open(url, "_blank");
+        }
+    
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show-on-scroll');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+    
+        const contactSection = document.querySelector('.contact-section');
+        observer.observe(contactSection);
+      </script>
+    </section>
+    
+    
+    <!-- Testimonials Slider Section -->
+    <section id="testimonials" class="testimonial-slider-section">
+      <h2 class="testimonials-heading">What Clients Say</h2>
+      <div class="slider-container">
+        <div class="slider-track" id="testimonialTrack">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=32" class="client-img" alt="Client 1" />
+            <p>"Imran helped me set up my Facebook ads and explained everything clearly. Really happy with the results!"</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Sarah — Business Owner
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=45" class="client-img" alt="Client 2" />
+            <p>"Got my WhatsApp automation done smoothly by Imran. He’s patient and really easy to work with."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★☆</div>
+            <h4>
+              Rony — Online Seller
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 3" />
+            <p>"Imran optimized my YouTube videos and I saw more views within days. Highly recommend him!"</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Jannat — Online Store
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 4" />
+            <p>"Even as a new freelancer, Imran was very professional and delivered good Google Ads results."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Hasib — Local Business Owner
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 5" />
+            <p>"He made business account setup easy and now I manage everything myself. Great service!"</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Sadia — Bakery Owner
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 6" />
+            <p>"Imran really knows his stuff. Instagram ads worked well for my brand thanks to him."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Mahin — Brand Marketer
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 7 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 7" />
+            <p>"He was super patient with all my questions and explained everything clearly."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Nafisa — Freelancer 
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 8 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 8" />
+            <p>"Thanks to Imran, my Facebook shop is doing great now. I highly recommend him."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Arman — Online Seller
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 9 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 9" />
+            <p>"Great communication and quality work. Everything was clear from start to finish."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Shamima — Startup Owner
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+
+          <!-- Testimonial 10 -->
+          <div class="testimonial-slide">
+            <img src="https://i.pravatar.cc/80?img=20" class="client-img" alt="Client 10" />
+            <p>"Imran helped me organize my Facebook, WhatsApp, and YouTube channels smoothly."</p>
+            <div class="voice-note">
+              <div class="play-button">&#9658;</div>
+              <div class="waveform">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <h4>
+              Rakibul — Content Creator
+              <span class="verified" title="Verified Client">&#10004;</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Dots -->
+      <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <script>
+      const track = document.getElementById('testimonialTrack');
+      const slides = track.children;
+      const dotContainer = document.getElementById('sliderDots');
+      let first = 0;
+      let interval;
+
+      // Create dots dynamically
+      for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => moveToSlide(i));
+        dotContainer.appendChild(dot);
+      }
+
+      const dots = document.querySelectorAll('.dot');
+
+      function updateDots(i) {
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[i].classList.add('active');
+      }
+
+      function moveToSlide(i) {
+        first = i;
+        track.style.transform = `translateX(-${i * 100}%)`;
+        updateDots(i);
+        resetInterval();
+      }
+
+      function nextSlide() {
+        first = (first + 1) % slides.length;
+        moveToSlide(first);
+      }
+
+      function resetInterval() {
+        clearInterval(interval);
+        interval = setInterval(nextSlide, 5000);
+      }
+
+      interval = setInterval(nextSlide, 5000);
+    </script>
+
+    
+    
+    <!-- About + Education Section -->
+    <section id="about-education" class="about-education-section">
+      <div class="section-box">
+        <h2 class="section-heading">About Me</h2>
+        <p>
+          Hello! I'm <strong>Imran Ali</strong>, a passionate freelancer from Bangladesh. I work with
+          <strong>Facebook Ads, Instagram Ads, WhatsApp Automation, Business Account Setup</strong>, and many more digital tools to help businesses grow online.
+        </p>
+        <p>
+          I love creating smart systems using AI and automation. From building marketing strategies to managing business accounts and running result-driven campaigns — I ensure that every project adds real value.
+        </p>
+        <p>
+          I also enjoy helping others learn about AI and modern technology, making complex things simpler and easier to use. I'm always curious, always learning, and always building!
+        </p>
+      </div>
+
+      <div class="section-box">
+        <h2 class="section-heading">Education Background</h2>
+        <p>
+          I am currently pursuing <strong>Bachelor of Science in Computer Science & Engineering (CSE)</strong> at
+          <strong>University of Rajshahi</strong>.
+        </p>
+        <p>
+          Batch: <strong>CSE-33</strong> <br>
+          University Batch ID: <strong>RU-72</strong>
+        </p>
+      </div>
+    </section>
+
+    
+    <!-- Glass Contact Cards -->
+    <section class="glass-section">
+      <div class="glass-row">
+        <div class="glass-card hidden-on-load">
+          <i class="fas fa-envelope fa-2x"></i>
+          <h5>Email</h5>
+          <p>imran.28279@gmail.com</p>
+        </div>
+        <div class="glass-card hidden-on-load">
+          <i class="fas fa-phone fa-2x"></i>
+          <h5>Phone</h5>
+          <p>+880 17042-09861</p>
+        </div>
+        <div class="glass-card hidden-on-load">
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+          <h5>Location</h5>
+          <p>Rangpur, Bangladesh</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer style="background-color: #111; color: #eee; padding: 20px 0;">
+      <div style="max-width: 900px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; text-align: center;">
+        <div style="flex: 1; padding: 10px;">
+          <p style="font-size: 14px;">&copy; 2025 Md. Imran Ali. All rights reserved.</p>
+        </div>
+        <div style="flex: 1; padding: 10px;">
+          <div style="display: flex; justify-content: center; gap: 15px;">
+            <a href="https://www.facebook.com/Dekha.Hobe.Abar.Konodin" target="_blank" style="color: #eee;"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" target="_blank" style="color: #eee;"><i class="fab fa-x-twitter fa-lg"></i></a>
+            <a href="#" target="_blank" style="color: #eee;"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="#" target="_blank" style="color: #eee;"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" target="_blank" style="color: #eee;"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
